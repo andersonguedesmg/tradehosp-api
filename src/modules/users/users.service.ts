@@ -17,6 +17,10 @@ export class UsersService {
     return await this.userRepository.findOne<User>({ where: { id } });
   }
 
+  async getUserByCpf(cpf: string): Promise<User> {
+    return await this.userRepository.findOne<User>({ where: { cpf } });
+  }
+
   async getAllUsers(): Promise<User[]> {
     return await this.userRepository.findAll<User>({});
   }
