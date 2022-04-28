@@ -27,7 +27,7 @@ export class AuthService {
   }
 
   public async login(user) {
-    const userLogin = await this.userService.getUserByCpf(user.cpf);
+    const userLogin = await this.userService.getUserByCpf(user.dataValues.cpf);
 
     const userForToken = {
       ...user,
@@ -54,8 +54,8 @@ export class AuthService {
     return { user: result, token };
   }
 
-  private async generateToken(user: UserDto) {
-    const token = await this.jwtService.signAsync(user);
+  private async generateToken(user: any) {
+    const token = await this.jwtService.signAsync(user.dataValues);
     return token;
   }
 
