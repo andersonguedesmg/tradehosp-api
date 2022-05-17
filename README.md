@@ -24,7 +24,18 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+API de uma plataforma que tem o objetivo facilitar a doação e/ou empréstimo de insumos hospitalares.
+
+## Technologies
+
+- [NestJS](https://nestjs.com/)
+- [Node.js](https://nodejs.org/en/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [Sequelize](https://sequelize.org/)
+- [JWT](https://jwt.io/)
+- [Passport](https://github.com/jaredhanson/passport)
+- [Bcrypt](https://www.npmjs.com/package/bcrypt)
+- [Swagger](https://swagger.io/)
 
 ## Installation
 
